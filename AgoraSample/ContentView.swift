@@ -4,7 +4,7 @@
 //
 //  Created by jerome cha on 2021/02/26.
 //
-g
+
 import SwiftUI
 import AgoraRtcKit
 
