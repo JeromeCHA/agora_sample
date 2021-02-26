@@ -15,6 +15,7 @@
 		BD15F6E525E88B50002B0A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD15F6E325E88B50002B0A0A /* LaunchScreen.storyboard */; };
 		BD15F6F025E88B50002B0A0A /* AgoraSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F6EF25E88B50002B0A0A /* AgoraSampleTests.swift */; };
 		BD15F6FB25E88B50002B0A0A /* AgoraSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F6FA25E88B50002B0A0A /* AgoraSampleUITests.swift */; };
+		EAE8A4345F7FE7175F39A749 /* libPods-AgoraSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E43FC2673CAF9490071AA86 /* libPods-AgoraSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		927187BD3CFBAABBCC2BDC0E /* Pods-AgoraSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraSample.release.xcconfig"; path = "Target Support Files/Pods-AgoraSample/Pods-AgoraSample.release.xcconfig"; sourceTree = "<group>"; };
+		9E43FC2673CAF9490071AA86 /* libPods-AgoraSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgoraSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB49901A899080EB776A65E9 /* Pods-AgoraSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraSample.debug.xcconfig"; path = "Target Support Files/Pods-AgoraSample/Pods-AgoraSample.debug.xcconfig"; sourceTree = "<group>"; };
 		BD15F6D525E88B4E002B0A0A /* AgoraSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD15F6D825E88B4E002B0A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD15F6DA25E88B4E002B0A0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE8A4345F7FE7175F39A749 /* libPods-AgoraSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136B0E5E6D604A3ABF7AA3E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E43FC2673CAF9490071AA86 /* libPods-AgoraSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1AF240C9838D5B8B541A3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB49901A899080EB776A65E9 /* Pods-AgoraSample.debug.xcconfig */,
+				927187BD3CFBAABBCC2BDC0E /* Pods-AgoraSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD15F6CC25E88B4E002B0A0A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				BD15F6EE25E88B50002B0A0A /* AgoraSampleTests */,
 				BD15F6F925E88B50002B0A0A /* AgoraSampleUITests */,
 				BD15F6D625E88B4E002B0A0A /* Products */,
+				8A1AF240C9838D5B8B541A3D /* Pods */,
+				136B0E5E6D604A3ABF7AA3E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD15F6FF25E88B50002B0A0A /* Build configuration list for PBXNativeTarget "AgoraSample" */;
 			buildPhases = (
+				05DCC4CB1A270E95C41BAAF7 /* [CP] Check Pods Manifest.lock */,
 				BD15F6D125E88B4E002B0A0A /* Sources */,
 				BD15F6D225E88B4E002B0A0A /* Frameworks */,
 				BD15F6D325E88B4E002B0A0A /* Resources */,
+				24010DCA4F976BAA7B094D64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +287,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05DCC4CB1A270E95C41BAAF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24010DCA4F976BAA7B094D64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraSample/Pods-AgoraSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraSample/Pods-AgoraSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgoraSample/Pods-AgoraSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD15F6D125E88B4E002B0A0A /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		BD15F70025E88B50002B0A0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB49901A899080EB776A65E9 /* Pods-AgoraSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +524,7 @@
 		};
 		BD15F70125E88B50002B0A0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927187BD3CFBAABBCC2BDC0E /* Pods-AgoraSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
