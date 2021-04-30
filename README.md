@@ -1,5 +1,29 @@
-# agora_sample
-Agora Rtc 3.3.0 build error
-This project will be deleted
-test
-[image](https://drive.google.com/file/d/1Ls5Xdf2Je406bTnGSqsK2nxib6xGwYR0/view?usp=sharing)
+fastlane documentation
+================
+# Installation
+
+Make sure you have the latest version of the Xcode command line tools installed:
+
+```
+xcode-select --install
+```
+
+Install _fastlane_ using
+```
+[sudo] gem install fastlane -NV
+```
+or alternatively using `brew install fastlane`
+
+# Available Actions
+## iOS
+### ios jerome
+```
+fastlane ios jerome
+```
+Description of what the lane does
+
+----
+
+This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
+More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
+The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
